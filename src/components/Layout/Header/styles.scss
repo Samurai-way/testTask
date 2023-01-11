@@ -1,0 +1,33 @@
+.header {
+  width: 80%;
+  height: 50px;
+  margin: auto;
+
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__logo {
+    all: unset;
+    grid-column: 2;
+    color: black;
+    font-size: 30px;
+    cursor: pointer;
+  }
+
+  &__button {
+    all: unset;
+    grid-column: 3;
+
+    color: black;
+    font-size: 15px;
+    cursor: pointer;
+  }
+}

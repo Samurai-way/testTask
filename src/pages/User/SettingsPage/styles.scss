@@ -1,0 +1,54 @@
+.settings-page {
+  width: 80vw;
+  padding: 100px;
+  margin: auto;
+  display: grid;
+  column-gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+
+  &_section {
+    border: 1px solid black;
+    padding: 15px;
+
+    .section__heading {
+      font-size: 18px;
+      font-weight: 700;
+      color: black;
+    }
+  }
+
+  .tickers-selection {
+    height: auto;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+
+    .ticker-item {
+      width: 100%;
+      height: 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0px 20px 0px 20px;
+
+      .ticker-text {
+        opacity: 0.3;
+
+        &_active {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  .interval-selection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    grid-column-start: 4;
+  }
+}

@@ -1,0 +1,15 @@
+.page-not-found {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+
+  &__heading {
+    font-size: 25px;
+  }
+
+  &__button {
+    text-decoration: none;
+    font-size: 18px;
+  }
+}

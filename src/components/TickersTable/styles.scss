@@ -1,0 +1,38 @@
+.ticker-table {
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  .ticker-table__header {
+    border-bottom: 2px solid black;
+  }
+  .table_grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    row-gap: 10px;
+
+    &__element {
+      justify-self: center;
+      text-align: center;
+    }
+
+    .change_positive {
+      width: 100px;
+      height: 20px;
+      background-color: green;
+    }
+
+    .change_negative {
+      width: 100px;
+      height: 20px;
+      background-color: red;
+    }
+  }
+
+  .ticker-item {
+    display: flex;
+    gap: 20px;
+  }
+}
